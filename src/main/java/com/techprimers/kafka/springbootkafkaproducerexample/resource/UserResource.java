@@ -14,11 +14,6 @@ public class UserResource {
 
     private static final String TOPIC = "Kafka_Example";
 
-    @GetMapping
-    public String hello() {
-        return "GET";
-    }
-
     @GetMapping("/publish/{name}")
     public String postName(@PathVariable("name") final String name) {
 
